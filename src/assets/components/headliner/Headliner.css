@@ -1,0 +1,56 @@
+.headliner {
+    display: flex;
+    align-items: center;
+}
+.thumbnail-img {
+    border-radius: 12px;
+} 
+.info {
+    margin-left: 24px;
+    max-width: 216px;
+    width: 100%;
+}
+
+.rating {
+    display: grid;
+    grid-template-columns: 72px 72px;
+    margin-bottom: 14px;
+}
+.like,
+.dislike,
+.time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+}
+.like {
+    color: #626264;
+}
+.dislike,
+.time {
+    color: #878787;
+}
+.like-icon,
+.dislike-icon {
+    margin-right: 4px;
+}
+.time-icon {
+    margin-right: 7px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.label {
+    background: rgba(80, 62, 157, 0.1);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 145% ;
+    text-align: center;
+    color: #503E9D;
+}
