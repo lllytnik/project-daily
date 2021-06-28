@@ -1,0 +1,20 @@
+.blockTitle {
+    display: flex;
+    margin: 32px 0 32px 0;
+    justify-content: space-between;
+    max-width: 1072px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+    color: #503E9D;
+}

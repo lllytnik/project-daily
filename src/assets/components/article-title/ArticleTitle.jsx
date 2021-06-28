@@ -1,8 +1,8 @@
-import './ArticleTitle.css';
+import s from './ArticleTitle.module.css';
 
 function ArticleTitle(props) {
     return (
-        <h1 className="title">{props.title}</h1>
+        <h1 className={s.title}>{props.title}</h1>
     );
 }
 

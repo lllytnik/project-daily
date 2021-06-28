@@ -1,4 +1,4 @@
-.App {
+.app {
     display: grid;
     grid-template-columns: 304px 1fr;
     grid-template-rows: 108px 1fr;
@@ -23,8 +23,18 @@
     padding: 32px;
 }
 
-.block-content {
+.blockHeadliner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 32px;
+    max-width: 1072px;
 }
+.featuredNews{
+}
+.blockNews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    max-width: 1072px;
+}
+
