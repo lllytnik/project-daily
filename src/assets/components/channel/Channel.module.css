@@ -1,0 +1,30 @@
+
+.channel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 152px;
+    height: 158px;
+    padding-top: 36px;
+    background-color: #fff;
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+    color: #503E9D;
+}

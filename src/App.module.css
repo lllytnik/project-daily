@@ -37,4 +37,10 @@
     grid-gap: 32px;
     max-width: 1072px;
 }
+.blockChannels{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 32px;
+    max-width: 1072px;
+}
 
