@@ -13,7 +13,7 @@ function News(props) {
             <div className={s.info}>
                 <ArticleTitle title={props.title} />
                 <div className={s.wrapper}>
-                <Lable labelText={props.labelText} />
+                <Lable style={{minWidth:'75px'}} labelText={props.labelText} />
                 <Time time={props.time}/>
                 </div>
             </div>

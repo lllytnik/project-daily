@@ -1,0 +1,14 @@
+.selectBlock{
+    display: flex;
+
+}
+.select{
+display: block; 
+margin-left: 12px;
+font-size: 14px; 
+font-family: sans-serif; 
+font-weight: 600; 
+color: #182135;
+background-color: #F2F2F2;
+border: none; 
+}

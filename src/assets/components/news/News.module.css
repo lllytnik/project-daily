@@ -12,7 +12,6 @@
 }
 
 .wrapper {
-    min-width: 75px;
     display: flex;
     flex-direction: column;
     margin-left: 10px;

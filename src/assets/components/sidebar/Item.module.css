@@ -1,0 +1,33 @@
+
+.itemSpan {
+    display: flex;
+    align-items: center;
+    width: 272px;
+    height: 56px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.itemSpan:hover {
+    background-color: #b3accf;
+}
+.itemLink {
+    position: relative;
+    text-decoration: none;
+    padding: 15px 15px 15px 64px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #878787;
+}
+.itemLink:hover{
+    color: #503E9D;
+    font-weight: 700;
+}
+.iconImg{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}

@@ -3,32 +3,66 @@ import Headliner from './assets/components/headliner/Headliner';
 import BlockTitle from './assets/components/block-title/BlockTitle';
 import News from './assets/components/news/News';
 import Channel from './assets/components/channel/Channel';
+import Icon from './assets/components/sidebar/Item';
+import SelectBlock from './assets/components/select-block/SelectBlock';
 import pic from './assets/images/headliner/pic.png';
 import pic2 from './assets/images/headliner/pic-2.png';
 import pic3 from './assets/images/headliner/pic-3.png';
 import pic4 from './assets/images/headliner/pic-4.png';
 import pic5 from './assets/images/headliner/pic-5.png';
 import pic6 from './assets/images/headliner/pic-6.png';
-import picNews from './assets/images/featured-news/pic.jpg'
-import picNews2 from './assets/images/featured-news/pic-2.jpg'
-import picNews3 from './assets/images/featured-news/pic-3.jpg'
+import picNews from './assets/images/featured-news/pic.jpg';
+import picNews2 from './assets/images/featured-news/pic-2.jpg';
+import picNews3 from './assets/images/featured-news/pic-3.jpg';
 import chennelIcon from './assets/images/channel/pic.png';
 import chennelIcon2 from './assets/images/channel/pic2.png';
 import chennelIcon3 from './assets/images/channel/pic3.png';
 import chennelIcon4 from './assets/images/channel/pic4.png';
 import chennelIcon5 from './assets/images/channel/pic5.png';
 import chennelIcon6 from './assets/images/channel/pic6.png';
-
+import logo from './assets/images/sidebar/logo.png';
+import navIcon from './assets/images/sidebar/navigation/icon.svg';
+import navIcon2 from './assets/images/sidebar/navigation/icon2.svg';
+import navIcon3 from './assets/images/sidebar/navigation/icon3.svg';
+import navIcon4 from './assets/images/sidebar/navigation/icon4.svg';
+import navIcon5 from './assets/images/sidebar/navigation/icon5.svg';
+import navIcon6 from './assets/images/sidebar/navigation/icon6.svg';
+import navIcon7 from './assets/images/sidebar/navigation/icon7.svg';
+import locationIcon from './assets/images/select-block/icon-location.svg';
+import chartIcon from './assets/images/select-block/icon-chart.svg';
+import calendarIcon from './assets/images/select-block/icon-calendar.svg';
 
 
 function App() {
   return (
     <div className={s.app}>
-      <header className={s.header}></header>
-      <aside className={s.sidebar}></aside>
+      <header className={s.header}>
+        <SelectBlock style={{marginRight: '20px'}} thumbnail={locationIcon} title="San Francisco, California"/>
+        <SelectBlock style={{marginRight: '20px'}} thumbnail={chartIcon} title="Analysis"/>
+        <SelectBlock thumbnail={calendarIcon} title="Monthly"/>
+      </header>
+
+
+      <aside className={s.sidebar}>
+        <a className={s.logoLink}>
+          <img className={s.logoImg} src={logo} />
+        </a>
+        <div className={s.nav}>
+          <ul className={s.list}>
+            <li className={s.item}><Icon title="Home" thumbnail={navIcon} /></li>
+            <li className={s.item}><Icon title="Explore" thumbnail={navIcon2} /></li>
+            <li className={s.item}><Icon title="Saved" thumbnail={navIcon3} /></li>
+            <li className={s.item}><Icon title="Subscriptions" thumbnail={navIcon4} /></li>
+            <li className={s.item}><Icon title="Messages" thumbnail={navIcon5} /></li>
+            <li className={s.item}><Icon title="Settings" thumbnail={navIcon6} /></li>
+            <li className={s.item}><Icon title="Logout" thumbnail={navIcon7} /></li>
+          </ul>
+        </div>
+      </aside>
+
       <main className={s.content}>
 
-      <section className={s.channels}>
+        <section className={s.channels}>
           <BlockTitle title="Explore Channels" />
           <div className={s.blockChannels}>
             <Channel thumbnail={chennelIcon} title="FOX NEWS" />
@@ -55,12 +89,11 @@ function App() {
         <section className={s.featuredNews}>
           <BlockTitle title="Featured News" />
           <div className={s.blockNews}>
-            <News thumbnail={picNews} title="Travellers to pay more than $2K, Trudeau says" labelText="BBC NEWS" time="2:00 pm"/>
-            <News thumbnail={picNews2} title="Travellers to pay more than $2K, Trudeau says" labelText="CNN NEWS" time="2:00 pm"/>
-            <News thumbnail={picNews3} title="Travellers to pay more than $2K, Trudeau says" labelText="BBC NEWS" time="2:00 pm"/>
+            <News thumbnail={picNews} title="Travellers to pay more than $2K, Trudeau says" labelText="BBC NEWS" time="2:00 pm" />
+            <News thumbnail={picNews2} title="Travellers to pay more than $2K, Trudeau says" labelText="CNN NEWS" time="2:00 pm" />
+            <News thumbnail={picNews3} title="Travellers to pay more than $2K, Trudeau says" labelText="BBC NEWS" time="2:00 pm" />
           </div>
         </section>
-
       </main>
 
 
