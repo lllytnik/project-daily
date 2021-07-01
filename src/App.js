@@ -39,11 +39,11 @@ function App() {
   return (
     <div className={s.app}>
       <header className={s.header}>
-        <SelectBlock style={{marginRight: '18px'}} thumbnail={locationIcon} title="San Francisco, California"/>
-        <SelectBlock style={{marginRight: '24px'}} thumbnail={chartIcon} title="Analysis"/>
-        <SelectBlock thumbnail={calendarIcon} title="Monthly"/>
-        <SearchBlock/>
-        <Profile/>
+        <SelectBlock style={{ marginRight: '18px' }} thumbnail={locationIcon} title="San Francisco, California" />
+        <SelectBlock style={{ marginRight: '24px' }} thumbnail={chartIcon} title="Analysis" />
+        <SelectBlock thumbnail={calendarIcon} title="Monthly" />
+        <SearchBlock />
+        <Profile />
       </header>
 
 
@@ -62,6 +62,19 @@ function App() {
             <li className={s.item}><Icon title="Logout" thumbnail={navIcon7} /></li>
           </ul>
         </div>
+        <div className={s.strip}></div>
+        <div className={s.info}>
+          <button className={s.btnClose}></button>
+          <div className={s.inner}>
+            <span className={s.iconInfo}></span>
+            <h4 className={s.title}>Subscribe to our
+              new plan <a className={s.linkInfo} href="#">$25</a></h4>
+            <h5 className={s.subTitle}>It is a limited time offer that will expire soon.</h5>
+            <button className={s.btn}>Subscribe now</button>
+          </div>
+        </div>
+
+
       </aside>
 
       <main className={s.content}>

@@ -51,6 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items:center;
+    padding: 0 16px 0 16px;
 }
 .logoLink {
     margin-top: 33px;
@@ -65,3 +66,115 @@
     margin-top: 128px;
 }
 
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    width: 240px;
+    height: 324px;
+    padding: 16px 16px;
+    background-color: #fff ;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.btnClose{
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btnClose::before {
+    content: '';
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-image: url('./assets/images/sidebar/close-icon.svg');
+}
+.strip{
+    width: 100%;
+    height: 2px;
+    margin: 32px 0 32px 0;
+    background-color: #E8E8E8;
+}
+.iconInfo{
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-color: #fad1c2;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.iconInfo::before {
+    content: '';
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url('./assets/images/sidebar/fire-icon.svg');
+}
+.inner{
+    padding: 16px 16px;
+    text-align: center;
+}
+.title{
+    margin-top: 20px;
+    padding: 0 5px 0 5px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #182135;
+}
+.linkInfo{
+    color:#FB6D3A;
+}
+.subTitle{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 0 5px 0 5px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #626264;
+}
+.btn{
+    width: 176px;
+    height: 48px;
+    border: none;
+    margin-top: 32px;
+    text-align: start;
+    padding: 15px 15px;
+    position: relative;
+    font-family: 'Open sans';
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color:#503E9D;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.btn::before{
+    content: '';
+    top: 18px;
+    right: 15px;
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    background-image: url('./assets/images/sidebar/arrow-icon.svg');
+}
