@@ -6,6 +6,7 @@ import Channel from './assets/components/channel/Channel';
 import Icon from './assets/components/sidebar/Item';
 import SelectBlock from './assets/components/select-block/SelectBlock';
 import SearchBlock from './assets/components/search-block/SearchBlock'
+import Profile from './assets/components/profile/Profile';
 import pic from './assets/images/headliner/pic.png';
 import pic2 from './assets/images/headliner/pic-2.png';
 import pic3 from './assets/images/headliner/pic-3.png';
@@ -32,7 +33,7 @@ import navIcon7 from './assets/images/sidebar/navigation/icon7.svg';
 import locationIcon from './assets/images/select-block/icon-location.svg';
 import chartIcon from './assets/images/select-block/icon-chart.svg';
 import calendarIcon from './assets/images/select-block/icon-calendar.svg';
-import avatar from './assets/images/profile/avatar.jpg'
+
 
 function App() {
   return (
@@ -42,15 +43,7 @@ function App() {
         <SelectBlock style={{marginRight: '24px'}} thumbnail={chartIcon} title="Analysis"/>
         <SelectBlock thumbnail={calendarIcon} title="Monthly"/>
         <SearchBlock/>
-        <div className={s.profile}>
-          <div className={s.burgerMenu}>
-          <button className={s.btn}>1</button>
-        </div>
-        <img className={s.avatar} src={avatar}/>
-        </div>
-        
-        
-
+        <Profile/>
       </header>
 
 
