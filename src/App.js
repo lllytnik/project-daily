@@ -107,8 +107,8 @@ function App() {
           <BlockTitle title="Featured News" />
           <div className={s.blockNews}>
             <News thumbnail={picNews} title="Travellers to pay more than $2K, Trudeau says" labelText="BBC NEWS" time="2:00 pm" />
-            <News thumbnail={picNews2} title="Travellers to pay more than $2K, Trudeau says" labelText="CNN NEWS" time="2:00 pm" />
-            <News thumbnail={picNews3} title="Travellers to pay more than $2K, Trudeau says" labelText="BBC NEWS" time="2:00 pm" />
+            <News thumbnail={picNews2} title="Myanmar’s military seizes control of country  de facto leader, Aung San Suu Kyi" labelText="CNN NEWS" time="2:00 pm" />
+            <News thumbnail={picNews3} title="Pressure builds for Biden to cancel other pipeline projects after Keystone XL" labelText="BBC NEWS" time="2:00 pm" />
           </div>
         </section>
       </main>
